@@ -27,7 +27,7 @@
             <?php endif; ?>
             <?php if ($showLoginForm): ?>
                 <h2>Login</h2>
-                <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+                <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="post">
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="username" required>
 
